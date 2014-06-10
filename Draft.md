@@ -5,9 +5,9 @@ one Installation = one user (no multi user support -> maybe later)
 
 ```yaml
 bookmarks:
-  unique_token_folder:
-    - bookmark.txt
-    - image.jpg
+  unique_token_folder: #UUIDv4 or UUIDv6
+    - (bookmark_type).txt # e.g. (bookmark_image.txt|bookmark_video.txt|…) 
+    - image.jpg           # optional 
 ```
 
 
@@ -29,21 +29,21 @@ bookmarks:
 ```md
 Title: Awesome Bookmark
 ---
-Description: so awesome
+Description: that's so funny i nearly fell off my dinosaur
 ---
-note: it is so awesome
+note: wuhu another useless Facebook Redesign
 ---
-picture: (image: awesomepic.jpg)
+thumb_image: (image: awesomepic.jpg)
 ---
-type: (image|video|link)
+type: (image|video|link) # type resolving could be solved with different templates
 ---
-url: http://dribbble.com/another_facebook_redesign
+url: http://dribbble.com/yet_another_facebook_redesign
 ---
-tags: awesome, bookmark, yeah, design, stuff
+tags: awesome, bookmark, yeah, design, stuff, useless, dribbble,
 ---
-created_at: 
+created_at: TIMESTAMP
 ---
-updated_at:
+updated_at: TIMESTAMP
 ---
-public: true|false
+public: (true|false)
 ```
