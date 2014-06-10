@@ -25,6 +25,13 @@ bookmarks:
 - API
   - authentication only (maybe Oauth, maybe simple HTTP-Basic Auth)
   - RESTful JSON
+  
+- Import Utilities
+  - Bookmarklet or other methods to import content quickly
+  
+- Flexible Catalog
+  - group content by tag
+  - full catalog search
 ```
 
 ## CSS
@@ -34,7 +41,7 @@ bookmarks:
 ## Design 
 
 - clean and unobtrusive
-
+- speed and efficiency as goals
 
 ## Plugin System
 
