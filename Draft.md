@@ -1,7 +1,10 @@
-# General Assumptions
+# Draft
+
+## General Assumptions
+
 one Installation = one user (no multi user support -> maybe later)
 
-## Content Folder Structure:
+## Content Folder Structure
 
 ```yaml
 bookmarks:
@@ -11,7 +14,8 @@ bookmarks:
 ```
 
 
-# Features
+
+## Features
 
 ```yaml
 - RSS Feed:
@@ -23,13 +27,36 @@ bookmarks:
   - RESTful JSON
 ```
 
+## CSS
+- Inuit.css
+- BEM 
 
-# Bookmark.txt Example
+## Design 
+
+- clean and unobtrusive
+
+
+## Plugin System
+
+### Spiders
+- parse content properly
+- pass page content to internal bookmark creation (image, title, description) 
+- define template for bookmark (image, video, plain_link, custom)
+
+## Standard Templates:
+  - Images
+  - Video
+  - Plain Link
+
+
+## Examples
+
+### Standard Bookmark.txt
 
 ```md
 Title: Awesome Bookmark
 ---
-Description: that's so funny i nearly fell off my dinosaur
+Description: that's so awesome i nearly fell off my dinosaur
 ---
 note: wuhu another useless Facebook Redesign
 ---
@@ -47,3 +74,14 @@ updated_at: TIMESTAMP
 ---
 public: (true|false)
 ```
+
+
+
+
+
+
+
+
+
+
+
