@@ -11,7 +11,7 @@ bookmarks:
 ```
 
 
-# Feautures
+# Features
 
 ```yaml
 - RSS Feed:
