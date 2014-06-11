@@ -51,24 +51,12 @@ bookmarks:
 
 ## API Endpoints
 
-### Bookmarks
+- [GET/POST/PUT/DELETE] /bookmarks/(:uuid)
 
-Bookmark Index
-[GET]   /boomarks
+- [GET/PUT] /user/(:uuid)
 
-Bookmark Show
+- [POST] /search
 
-[GET]   /boomarks/:uuid
-
-Bookmark Create
-
-[POST]  /boomarks
-
-Bookmark Update
-[PUT/PATCH] /bookmarks/:uuid
-
-Bookmark Delete
-[DELETE] /bookmarks/:uuid
 
 
 ## Examples
