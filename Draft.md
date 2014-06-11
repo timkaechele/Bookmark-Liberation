@@ -4,21 +4,12 @@
 
 one Installation = one user (no multi user support -> maybe later)
 
-## Content Folder Structure
-
-```yaml
-bookmarks:
-  unique_token_folder: #UUIDv4 or UUIDv6
-    - (bookmark_type).txt # e.g. (bookmark_image.txt|bookmark_video.txt|…) 
-    - image.jpg           # optional 
-```
-
 ## Features
 
 ```yaml
 - RSS Feed:
   - where(public: true)
-  - possible to subscribe to other users
+  - possible to subscribe to other users (maybe better solveable via JSON)
 
 - API
   - authentication only (maybe Oauth, maybe simple HTTP-Basic Auth)
@@ -48,10 +39,17 @@ bookmarks:
 
 ## Backend
 - Kirby Toolkit
-- plain file system data persistence layer
+- Sqlite/MySQL
 - speed and efficiency as goals
 
-We will use a file system approach. It makes the whole system more accessible to the end user and it is easier to backup data compared to a database
+## Exporters
+
+Your data belongs to you and by following this approach we will support a variety of exporters. You should not be locked inside one system.
+
+### Possible Exporters
+- Bookmark List
+- JSON 
+- Complete Datastructure (includes images) in an human readable form like YAML
 
 
 ## Plugin System
@@ -78,33 +76,7 @@ We will use a file system approach. It makes the whole system more accessible to
 
 ## Examples
 
-
-### Standard Bookmark.txt
-
-```md
-Title: Awesome Bookmark
----
-Description: that's so awesome i nearly fell off my dinosaur
----
-note: wuhu another useless Facebook Redesign
----
-thumb_image: (image: awesomepic.jpg)
----
-type: (image|video|link) # type resolving could be solved with different templates
----
-url: http://dribbble.com/yet_another_facebook_redesign
----
-tags: awesome, bookmark, yeah, design, stuff, useless, dribbble,
----
-created_at: TIMESTAMP
----
-updated_at: TIMESTAMP
----
-public: (true|false)
-```
-
-
-### API Example (First Draft)
+### Bookmark (First Draft)
 
 ```json
 {
