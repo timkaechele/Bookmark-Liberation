@@ -13,8 +13,6 @@ bookmarks:
     - image.jpg           # optional 
 ```
 
-
-
 ## Features
 
 ```yaml
@@ -34,7 +32,18 @@ bookmarks:
 ## Design 
 
 - clean and unobtrusive
+- snappy user experience on mobile devices (no imitation of iOS or Android)
 
+## Frontend
+
+- SPA Approach (Ember.js)
+- Responsive
+
+## Backend
+- Kirby Toolkit
+- plain file system data persistence layer
+
+We will use a file system approach. It makes the whole system more accessible to the end user and it is easier to backup data compared to a database
 
 ## Plugin System
 
@@ -43,11 +52,11 @@ bookmarks:
 - pass page content to internal bookmark creation (image, title, description) 
 - define template for bookmark (image, video, plain_link, custom)
 
-## Standard Templates:
+## Templates:
   - Images
   - Video
   - Plain Link
-
+  - custom templates addable
 
 ## API Endpoints
 
@@ -56,7 +65,6 @@ bookmarks:
 - [GET/PUT] /user/(:uuid)
 
 - [POST] /search
-
 
 
 ## Examples
@@ -90,7 +98,7 @@ public: (true|false)
 ### API Example (First Draft)
 
 ```json
-{ bookmark: {
+{ 'bookmark': {
     'uuid': '6dc37800-f13e-11e3-ac10-0800200c9a66',
     'title': 'Ameowadeus',
     'description': 'no dog, much fun',
@@ -122,12 +130,3 @@ public: (true|false)
   }
 }
 ```
-
-
-
-
-
-
-
-
-
