@@ -98,35 +98,32 @@ public: (true|false)
 ### API Example (First Draft)
 
 ```json
-{ 'bookmark': {
-    'uuid': '6dc37800-f13e-11e3-ac10-0800200c9a66',
-    'title': 'Ameowadeus',
-    'description': 'no dog, much fun',
-    // optional
-    'note': 'so cat video',
-    'url': 'http:\/\/youtube.com/cat_video',
-    'type': 'video',
-    // type specific 
-    'video_url': 'http:\/\/embedded.youtube.com/cat_video',
-    // not type specific 
-    'thumb_url': 'http\/\/my_awesome_domain.com/image.png, 
-    'tags': [
-      'awesome',
-      'yeah',
-      'cat',
-      'video',
-      'kevin_spacey_rocks_it_again'
-    ],
-    'public': true,
-    'created_at': 20120919,
-    'updated_at': 20120919,
-  },
-  // embedded user object for less http request overhead 
-  'user': {
-    'username': 'TimKaechele',
-    'gravatar': 'super_complex md5 hash',
-    'created_at': 20120919,
-    'updated_at': 20120919
-  }
+{
+    "bookmark": {
+        "uuid": "6dc37800-f13e-11e3-ac10-0800200c9a66",
+        "title": "Ameowadeus",
+        "description": "no dog, much fun",
+        "note": "so cat video",
+        "url": "http://youtube.com/cat_video",
+        "type": "video",
+        "video_url": "http://embedded.youtube.com/cat_video",
+        "thumb_url": "http//my_awesome_domain.com/image.png",
+        "tags": [
+            "awesome",
+            "yeah",
+            "cat",
+            "video",
+            "kevin_spacey_rocks_it_again"
+        ],
+        "public": true,
+        "created_at": 20120919,
+        "updated_at": 20120919
+    },
+    "user": {
+        "username": "TimKaechele",
+        "gravatar": "super_complexmd5hash",
+        "created_at": 20120919,
+        "updated_at": 20120919
+    }
 }
 ```
