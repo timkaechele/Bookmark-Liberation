@@ -18,16 +18,23 @@ bookmarks:
 ```yaml
 - RSS Feed:
   - where(public: true)
-  - possible to subscribe to other users 
+  - possible to subscribe to other users
 
 - API
   - authentication only (maybe Oauth, maybe simple HTTP-Basic Auth)
   - RESTful JSON
+
+- Import Utilities
+  - Bookmarklet or other methods to import content quickly
+
+- Flexible Catalog
+  - group content by tag
+  - full catalog search
 ```
 
 ## CSS
 - Inuit.css
-- BEM 
+- BEM
 
 ## Design 
 
@@ -42,14 +49,16 @@ bookmarks:
 ## Backend
 - Kirby Toolkit
 - plain file system data persistence layer
+- speed and efficiency as goals
 
 We will use a file system approach. It makes the whole system more accessible to the end user and it is easier to backup data compared to a database
+
 
 ## Plugin System
 
 ### Spiders
 - parse content properly
-- pass page content to internal bookmark creation (image, title, description) 
+- pass page content to internal bookmark creation (image, title, description)
 - define template for bookmark (image, video, plain_link, custom)
 
 ## Templates:
