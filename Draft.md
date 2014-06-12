@@ -88,7 +88,6 @@ Similar to GimmeBar it will be possible to backup social media streams like Inst
 {
     "bookmark": {
         "uuid": "6dc37800-f13e-11e3-ac10-0800200c9a66",
-        "short_url: "http://myawesomedomain.com/s/short_uid",
         "title": "Ameowadeus",
         "description": "no dog, much fun",
         "note": "so cat video",
