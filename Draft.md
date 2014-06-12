@@ -1,7 +1,8 @@
 # Draft
 
-## General Assumptions
-
+## General Ideas
+KirbyZoo should be a bookmarking service that is suitable for the average casual user as much as for the power user who just wants a fast and open alternative to existing services.
+The 
 one Installation = one user (no multi user support -> maybe later)
 
 ## Features
@@ -51,7 +52,6 @@ Your data belongs to you and by following this approach we will support a variet
 - JSON 
 - Complete Datastructure (includes images) in an human readable form like YAML
 
-
 ## Plugin System
 
 ### Spiders
@@ -59,20 +59,23 @@ Your data belongs to you and by following this approach we will support a variet
 - pass page content to internal bookmark creation (image, title, description)
 - define template for bookmark (image, video, plain_link, custom)
 
-## Templates:
-  - Images
-  - Video
-  - Plain Link
-  - custom templates addable
+## Types/Templates
+Every Bookmark can has its own type. The type of the bookmark dictates its presentation. By doing so the KirbyZoo is useable by power users that don't want a visual bookmarking service, but an open source alternative to share and archive links easily. 
+
+- Image
+- Video
+- Link
+
+## Custom Importers
+Similar to GimmeBar it will be possible to backup social media streams like Instagram or Twitter. These custom importers are not part of the core experience of the KirbyZoo but are addable as a plugin.
 
 ## API Endpoints
 
-- [GET/POST/PUT/DELETE] /bookmarks/(:uuid)
-
+- [GET/POST/PUT/DELETE] /bookmarks/(:uuid)?search_query=(…)
 - [GET/PUT] /user/(:uuid)
+- [GET] /tags/(:uuid)
 
-- [POST] /search
-
+ 
 
 ## Examples
 
@@ -82,6 +85,7 @@ Your data belongs to you and by following this approach we will support a variet
 {
     "bookmark": {
         "uuid": "6dc37800-f13e-11e3-ac10-0800200c9a66",
+        "short_url: "http://myawesomedomain.com/s/short_uid",
         "title": "Ameowadeus",
         "description": "no dog, much fun",
         "note": "so cat video",
