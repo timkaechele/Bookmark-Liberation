@@ -2,8 +2,11 @@
 
 ## General Ideas
 KirbyZoo should be a bookmarking service that is suitable for the average casual user as much as for the power user who just wants a fast and open alternative to existing services.
-The 
-one Installation = one user (no multi user support -> maybe later)
+The whole system should be as open as possible. 
+
+## Pricing
+The whole system will be free (as in price) open source software, but to support further development we may include a Gittip.
+
 
 ## Features
 
