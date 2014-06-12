@@ -1,0 +1,63 @@
+KirbyZoo DB Schema
+
+# stores user informations
+Users:
+  - id(int)
+  - username(string)
+  - email(string)
+  - password_digest(string)
+  - created_at(datetime)
+  - updated_at(datetime)
+
+# stores bookmarks
+Bookmarks:
+  - id(int)
+  - user_id(int)
+  - url(text)
+  - image_path(string)
+  - title(string)
+  - description(string)
+  - note(text)
+  - type(string)
+  - custom_values(text)(serialized)
+  - created_at(datetime)
+  - updated_at(datetime)
+
+# stores settings of the user
+Settings:
+  - id(int)
+  - user_id(int)
+  - key(string)
+  - value(value)
+  - created_at(datetime)
+  - updated_at(datetime)
+
+# stores bookmark tags
+Tags:
+  - id(int)
+  - name(string)
+  - created_at(datetime)
+  - updated_at(datetime)
+
+# hash table for bookmark tag relation
+Bookmarks_Tags
+  - bookmark_id(int)
+  - tag_id(int)
+  - created_at(datetime)
+  - updated_at(datetime)
+
+# stores user subscriptions to external bookmarks
+Subscriptions:
+  - id(int)
+  - user_id(int)
+  - url(text)
+  - created_at(datetime)
+  - updated_at(datetime)
+
+# Caches subscribed user bookmarks
+Subscriptions_Cache:
+  - id(int)
+  - subscription_id(int)
+  - response(text)(serialized json)
+  - created_at(datetime)
+  - updated_at(datetime)
