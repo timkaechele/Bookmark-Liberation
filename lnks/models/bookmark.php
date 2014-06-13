@@ -1,17 +1,18 @@
 <?php
 
-class Bookmark extends Eloquent{
+use \Illuminate\Database\Eloquent\Model;
+class Bookmark extends Model{
 
   public function user() {
-    $this->belongsTo('User');
+    return $this->belongsTo('User');
   }
 
   public function pack() {
-    $this->belongsTo('Pack');
+    return $this->belongsTo('Pack');
   }
 
   public function tag() {
-    $this->belongsToMany('Tag');
+    return $this->belongsToMany('Tag');
   }
 
   public function favicon() {

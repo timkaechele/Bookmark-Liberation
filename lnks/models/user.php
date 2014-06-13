@@ -1,13 +1,15 @@
 <?php
 
-class User extends Eloquent{
+use \Illuminate\Database\Eloquent\Model;
+
+class User extends Model{
 
   public function bookmarks(){
-    $this->hasMany('Bookmark');
+    return $this->hasMany('Bookmark');
   }
 
   public function packs() {
-    $this->hasMany('Pack');
+    return $this->hasMany('Pack');
   }
 
   public function gravatar() {

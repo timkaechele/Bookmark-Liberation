@@ -1,13 +1,14 @@
 <?php
 
-class Pack extends Eloquent{
+use \Illuminate\Database\Eloquent\Model;
+class Pack extends Model{
 
   public function user(){
-    $this->belongsTo('User');
+    return $this->belongsTo('User');
   }
 
   public function bookmarks() {
-    $this->hasMany('Bookmark');
+    return $this->hasMany('Bookmark');
   }
 
 }

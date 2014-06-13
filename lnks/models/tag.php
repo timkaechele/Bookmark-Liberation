@@ -1,13 +1,14 @@
 <?php
 
-class Tag extends Eloquent{
+use \Illuminate\Database\Eloquent\Model;
+class Tag extends Model{
 
   public function bookmarks(){
-    $this->belongsToMany('Bookmark');
+    return $this->belongsToMany('Bookmark');
   }
 
   public function packs() {
-    $this->hasMany('Pack');
+    return $this->hasMany('Pack');
   }
 
 }
