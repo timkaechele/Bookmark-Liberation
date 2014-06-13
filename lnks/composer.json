@@ -1,0 +1,14 @@
+{
+  "require": {
+    "slim/slim": "*",
+    "illuminate/database": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "lnks/models",
+      "lnks/lib",
+      "lnks/helpers"
+    ]
+  },
+  "minimum-stability": "stable"
+}
