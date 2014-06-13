@@ -5,9 +5,9 @@
   },
   "autoload": {
     "classmap": [
-      "lnks/models",
-      "lnks/lib",
-      "lnks/helpers"
+      "models",
+      "lib",
+      "helpers"
     ]
   },
   "minimum-stability": "stable"
