@@ -86,31 +86,35 @@ Similar to GimmeBar it will be possible to backup social media streams like Inst
 
 ```json
 {
-    "bookmark": {
-        "uuid": "6dc37800-f13e-11e3-ac10-0800200c9a66",
-        "title": "Ameowadeus",
-        "description": "no dog, much fun",
-        "note": "so cat video",
-        "url": "http://youtube.com/cat_video",
-        "type": "video",
-        "video_url": "http://embedded.youtube.com/cat_video",
-        "thumb_url": "http//my_awesome_domain.com/image.png",
-        "tags": [
-            "awesome",
-            "yeah",
-            "cat",
-            "video",
-            "kevin_spacey_rocks_it_again"
-        ],
-        "public": true,
-        "created_at": 20120919,
-        "updated_at": 20120919
+  "bookmark": {
+    "uuid": "6dc37800-f13e-11e3-ac10-0800200c9a66",
+    "title": "Ameowadeus",
+    "description": "no dog, much fun",
+    "note": "so cat video",
+    "url": "http://youtube.com/cat_video",
+    "type": "video",
+    "thumb_url": "http//my_awesome_domain.com/image.png",
+    "image_url": "http//my_awesome_domain.com/full_size_image.png",
+    "video_url": "http://embedded.youtube.com/cat_video",
+    "tags": [
+      "awesome",
+      "yeah",
+      "cat",
+      "video",
+      "kevin_spacey_rocks_it_again"
+    ],
+    "custom": {
+      "my_custom_key": "custom value"
     },
-    "user": {
-        "username": "TimKaechele",
-        "gravatar": "super_complexmd5hash",
-        "created_at": 20120919,
-        "updated_at": 20120919
-    }
+    "public": true,
+    "created_at": 20120919,
+    "updated_at": 20120919
+  },
+  "user": {
+    "username": "TimKaechele",
+    "gravatar": "super_complexmd5hash",
+    "created_at": 20120919,
+    "updated_at": 20120919
+  }
 }
 ```
