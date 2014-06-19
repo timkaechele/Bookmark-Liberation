@@ -17,6 +17,11 @@ $app->group('/api/v1', function() use($app) {
           'type'			 	=> 'link',
           'thumb_url'  	=> '//www.google.com/s2/favicons?domain=dribbble.com',
           'image_url'  	=> null,
+          'tags'				=> Array(
+          	'dribbble',
+            'desgin',
+            'cool'
+          ),
           'video_url'	 	=> null,
           'public'     	=> false,
           'created_at' 	=> Time(),
@@ -25,13 +30,13 @@ $app->group('/api/v1', function() use($app) {
         'user' => Array(
         	'username' => 'TimKaechele',
           'email'		 => 'TimKaechele@me.com',
-					'gravatar' => ''
+					'gravatar' => 'http://www.gravatar.com/avatar/' . md5('timkaechele@me.com')
         )
       );
 			# Configure Response
       $app->response->setStatus(200);
       $app->response->headers->set('Content-Type', 'application/json');
-      $app->response->write(json_encode($data));
+      $app->response->write(json_encode($data, JSON_PRETTY_PRINT));
     });
 	});
 });

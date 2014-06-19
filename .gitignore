@@ -1,1 +1,6 @@
+# Ignore composer
 lnks/vendor/*
+lnks/composer.phar
+
+# Ignore strange Mac Filesystem Stuff
+.DS_Store

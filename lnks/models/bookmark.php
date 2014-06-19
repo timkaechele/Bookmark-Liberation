@@ -7,10 +7,6 @@ class Bookmark extends Model{
     return $this->belongsTo('User');
   }
 
-  public function pack() {
-    return $this->belongsTo('Pack');
-  }
-
   public function tag() {
     return $this->belongsToMany('Tag');
   }
@@ -18,5 +14,7 @@ class Bookmark extends Model{
   public function favicon() {
     return "//www.google.com/s2/favicons?domain=" . $this->url();
   }
-
+	public function() {
+    
+  }
 }

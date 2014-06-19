@@ -1,0 +1,13 @@
+{
+  "database": { 
+    "adapter": "sqlite",
+    "path": ""
+    "host": "",
+    "username": "root",
+    "password": "root",
+    "name": "lnks",
+    "migration": {
+      "status": 12
+    }
+	}  
+}
