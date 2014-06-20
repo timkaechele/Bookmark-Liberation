@@ -69,6 +69,10 @@ class HealthCheck {
 // ===============================================
 $app = new \Slim\Slim();
 
+$app->hook('slim.before', function() use($app) {
+	// run Healthcheck
+});
+
 $app->group('/api/v1', function() use($app) {
   
   // Bookmark API Section  
