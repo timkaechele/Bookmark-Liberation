@@ -1,42 +1,91 @@
 <?php
 
-$app->group('/api/v1', function() use($app) {
-  $app->group('/bookmarks', function() use($app) {
-      
-    $app->get('/', function() use ($app) {
+require __DIR__ . '/vendor/autoload.php';
 
-    });
-    $app->get('/:id', function($id) use($app) {
-      $data = Array(
-        'bookmark' => Array(
-          'id'					=> 1,
-          'title'				=> 'Dribbble',
-          'description' => 'A designers nightmare',
-          'note'			 	=> null,
-          'url'				 	=> 'http://dribbble.com',
-          'type'			 	=> 'link',
-          'thumb_url'  	=> '//www.google.com/s2/favicons?domain=dribbble.com',
-          'image_url'  	=> null,
-          'tags'				=> Array(
-          	'dribbble',
-            'desgin',
-            'cool'
-          ),
-          'video_url'	 	=> null,
-          'public'     	=> false,
-          'created_at' 	=> Time(),
-          'updated_at' 	=> Time(),
-        ),
-        'user' => Array(
-        	'username' => 'TimKaechele',
-          'email'		 => 'TimKaechele@me.com',
-					'gravatar' => 'http://www.gravatar.com/avatar/' . md5('timkaechele@me.com')
-        )
-      );
-			# Configure Response
-      $app->response->setStatus(200);
-      $app->response->headers->set('Content-Type', 'application/json');
-      $app->response->write(json_encode($data, JSON_PRETTY_PRINT));
-    });
-	});
+
+// ===============================================
+// 
+// Model Setup
+// 
+// ===============================================
+class User extends Eloquent {
+  public function bookmarks() {
+    return $this->hasMany('Bookmark');
+  }
+}
+
+class Bookmark extends Eloquent {
+  public function user() {
+    return $this->belongsTo('User');
+  }
+}
+
+class Tag extends Eloquent {
+  public function bookmark() {
+    return $this->belongsToMany('Bookmark');
+  }
+}
+
+// ===============================================
+// 
+// Helper Setup
+// 
+// ===============================================
+
+
+// ===============================================
+// 
+// Routing Logic
+// 
+// ===============================================
+$app = new \Slim\Slim();
+
+$app->group('/api/v1', function() use($app) {
+  
+  // Bookmark API Section  
+  $app->get('/bookmarks', function() use($app) {
+    
+  });
+  $app->get('/bookmarks/:id', function($id) use($app) {
+    
+  });
+  $app->put('/bookmarks/:id', function($id) use($app) {
+    
+  });
+  $app->post('/bookmarks', function() use($app) {
+    
+  });
+  $app->delete('/bookmarks/:id', function($id) use($app){
+    
+  });
+
+  // Tag API Section
+  $app->get('/tags', function() use($app) {
+    
+  });
+  $app->get('/tags/:id', function($id) use($app) {
+    
+  });
+  $app->put('/tags/:id', function($id) use($app) {
+    
+  });
+  $app->post('/tags', function() use($app) {
+    
+  });
+  $app->delete('/tags/:id', function($id) use($app){
+    
+  });
+  
+
 });
+
+$app->get('/', function() use($app) {
+  
+});
+
+$app->get('/s/:id', function($id) use($app){
+  
+});
+
+// run the app
+$app->run();

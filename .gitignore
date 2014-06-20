@@ -4,3 +4,6 @@ lnks/composer.phar
 
 # Ignore strange Mac Filesystem Stuff
 .DS_Store
+
+# Strange Codio Stuff
+.codio

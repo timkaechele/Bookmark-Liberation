@@ -5,9 +5,7 @@
   },
   "autoload": {
     "classmap": [
-      "models",
-      "lib",
-      "helpers"
+      "models"
     ]
   },
   "minimum-stability": "stable"
