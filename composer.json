@@ -1,0 +1,20 @@
+{
+  "name": "timkaechele/kirbyzoo",
+  "description": "KirbyZoo is self hostedvisual bookmark service.",
+  "license": "GNU GPL v3",
+  "authors": [
+    {
+      "name": "Tim Kächele",
+      "email": "TimKaechele@me.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "./vendor/toolkit"
+    }
+  ],
+  "require":  {
+    "getkirby/toolkit": "2.0.6"
+  }
+}

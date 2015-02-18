@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "eaf74bff5afef5fe83f252e2d63e3e03",
+    "packages": [
+        {
+            "name": "getkirby/toolkit",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "./vendor/toolkit",
+                "reference": "aac4a218b7fa33ee6e65fb9732562aed59e53118"
+            },
+            "replace": {
+                "abeautifulsite/simpleimage": "2.5.3",
+                "mustangostang/spyc": "0.5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastian Allgeier",
+                    "email": "bastian@getkirby.com",
+                    "homepage": "http://bastianallgeier.com"
+                }
+            ],
+            "description": "The Kirby 2 toolkit is a set of handy classes and helpers which make your life with PHP easier.",
+            "homepage": "http://toolkit.getkirby.com",
+            "keywords": [
+                "toolkit"
+            ],
+            "support": {
+                "email": "support@getkirby.com",
+                "issues": "https://github.com/getkirby/toolkit/issues",
+                "forum": "http://forum.getkirby.com",
+                "source": "https://github.com/getkirby/toolkit"
+            },
+            "time": "2015-01-15 15:39:25"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "platform": [],
+    "platform-dev": []
+}
