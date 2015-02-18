@@ -4,14 +4,14 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eaf74bff5afef5fe83f252e2d63e3e03",
+    "hash": "e32a6c6d2749f26c4d44f3b74d0765e8",
     "packages": [
         {
             "name": "getkirby/toolkit",
             "version": "2.0.6",
             "source": {
                 "type": "git",
-                "url": "./vendor/toolkit",
+                "url": "./packages/toolkit",
                 "reference": "aac4a218b7fa33ee6e65fb9732562aed59e53118"
             },
             "replace": {
