@@ -78,6 +78,7 @@ and archive links easily.
 - Link
 
 ## Custom Importers
+
 Similar to GimmeBar it will be possible to backup social media streams like
 Instagram or Twitter. These custom importers are not part of the core
 experience of the KirbyZoo but are addable as a plugin.
