@@ -1,10 +1,10 @@
-# KirbyZoo
+# Bookmark Liberation
 
 ## Draft
 
 ### General Ideas
 
-KirbyZoo should be a bookmarking service that is suitable for the average
+Bookmark Liberation should be a bookmarking service that is suitable for the average
 casual user as much as for the power user who just wants a fast and open
 alternative to existing services. The whole system should be as open as possible.
 
@@ -15,7 +15,7 @@ but to support further development we may include an optional Gittip.
 
 ### Features
 
-```yaml
+
 - RSS Feed:
   - where(public: true)
   - possible to subscribe to other users (maybe better solveable via JSON)
@@ -30,7 +30,6 @@ but to support further development we may include an optional Gittip.
 - Flexible Catalog
   - group content by tag
   - full catalog search
-```
 
 ### Design
 
@@ -69,7 +68,7 @@ variety of exporters. You should not be locked inside one system.
 ### Types/Templates
 
 Every Bookmark can has its own type. The type of the bookmark dictates its
-presentation. By doing so the KirbyZoo is useable by power users that don't
+presentation. By doing so the Bookmark Liberation is useable by power users that don't
 want a visual bookmarking service, but an open source alternative to share
 and archive links easily.
 
@@ -81,7 +80,7 @@ and archive links easily.
 
 Similar to GimmeBar it will be possible to backup social media streams like
 Instagram or Twitter. These custom importers are not part of the core
-experience of the KirbyZoo but are addable as a plugin.
+experience of the Bookmark Liberation but are addable as a plugin.
 
 ## API Endpoints
 
