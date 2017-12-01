@@ -96,7 +96,7 @@ experience of the Bookmark Liberation but are addable as a plugin.
 {
   "bookmark": {
     "uuid": "6dc37800-f13e-11e3-ac10-0800200c9a66",
-    "title": "Ameowadeus",
+    "title": "Much cat video",
     "description": "no dog, much fun",
     "note": "so cat video",
     "url": "http://youtube.com/cat_video",
@@ -108,8 +108,7 @@ experience of the Bookmark Liberation but are addable as a plugin.
       "awesome",
       "yeah",
       "cat",
-      "video",
-      "kevin_spacey_rocks_it_again"
+      "video"
     ],
     "custom": {
       "my_custom_key": "custom value"
